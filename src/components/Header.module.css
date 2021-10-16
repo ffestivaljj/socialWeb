@@ -1,0 +1,19 @@
+.header {
+    grid-area: h;
+    margin: 5px 20px;
+    background-color: blueviolet;
+    border:5px solid darkgray;
+    border-radius: 15px;
+    position: relative;
+}
+
+.header img {
+
+    margin: 0px 5px 0px;
+    width: 110px;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    /*max-height: 100px;*/
+
+}
