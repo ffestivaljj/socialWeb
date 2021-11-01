@@ -1,51 +1,103 @@
 .profile {
-    grid-area: b;
-    margin: 10px 20px 0px 0px;
-    background-color: #333333;
-    /*border: 3px solid pink;*/
-    /*display: grid;*/
+    margin: 10px 20px 0 0;
 
-    /*grid-template-areas:*/
-    /*""*/
+    display: grid;
+    grid-template: minmax(auto,150px) minmax(auto,300px) 1fr / 300px 1fr;
+
+    grid-template-areas:
+    "Theme Theme"
+    "Avatar Data"
+    "Wall Wall";
+    grid-gap: 20px;
+
 
 }
 .theme {
-
+    grid-area: Theme;
     border-radius: 15px;
-    height: 180px;
     background: url('https://policyexchange.org.uk/wp-content/uploads/2019/04/Space.jpg');
-    border: 5px solid darkgray;
+    border: 3px solid darkgray;
 }
 
 .avatar {
-    grid-area: a;
-    margin: 10px 20px 20px 0px;
-    border: 5px solid darkgray;
+    grid-area: Avatar;
+    margin: 10px  0;
+    border: 3px solid darkgray;
     border-radius: 10%;
-    background: center no-repeat url('https://1mvvi2mtud.a.trbcdn.net/in_dotaguide/uploads/2015/02/invoker-guide.jpg');
+    background: url('https://psmag.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_300/MTMxODI3Mjk4OTkwMDgyMDU4/shutterstock_125158133jpg.webp');
+    background-size: cover;
 
-    width: 250px;
-    height: 300px;
+
 }
 
 .personalData {
-    grid-area: d;
-    width: 400px;
+    grid-area: Data;
+    width: 100%;
     color: #91ff90;
-    padding: 0px 0px 15px 0px;
-    margin: 10px;
-
+    padding: 0 0 15px 0;
 }
 
 .item {
-    padding: 10px 5px;
-    margin: 10px 5px;
-    border: 5px solid darkgray;
+    grid-area: Posts;
+    padding: 5px 5px;
+    margin: 10px 0 15px;
+    border: 3px solid darkgray;
     border-radius: 15px;
     background-color: #8a2be2;
     font-size: 20px;
     font-family: "Righteous";
     text-transform: uppercase;
-
     color: #fcc97a;
+}
+.wall {
+    grid-area: Wall;
+    border: 3px solid darkgray;
+    padding: 5px 5px;
+    border-radius: 15px;
+    background-color: #8a2be2;
+    width: 100%;
+}
+.wall span{
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    font-family: "Righteous";
+    color: #fcc97a;
+
+}
+.button__send{
+    background-color: #fcc97a;
+    height: 30px;
+    width: 100px;
+    border: 3px solid darkgray;
+    margin: 0 5px;
+    border-radius: 15px;
+    color: #8a2be2;
+    font-family: "Righteous";
+    font-size: 20px;
+    text-align: center;
+}
+
+.comment{
+    font-family: "Righteous";
+    color: #8a2be2;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px 0 0 5px;
+    border: 3px solid darkgray;
+    border-radius: 15px;
+    width: 400px;
+    height: 100px;
+
+}
+.wall__posts{
+    margin: 10px 15px;
+}
+.wall__post{
+    margin: 0 0 10px;
+    width: 400px;
+    border: 3px solid darkgray;
+    border-radius: 15px;
+    font-family: "Righteous";
+    color: #fcc97a;
+    padding: 5px 10px;
 }

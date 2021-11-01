@@ -1,20 +1,18 @@
 .app-wrapper {
   background-color: #333333;
-  display: grid;
-  width: 1400px;
-
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
 
-  grid-template-areas:
-  "h h h h"
-  "n b b b"
-  "n a d d";
-/*"n a d"*/
-/*  "n w"*/
-/*  'n p';*/
+  display: grid;
+  grid-template: minmax(70px, auto) 1fr minmax(70px, auto) / 1fr;
 
-  grid-template-rows: 120px 1fr 1fr ;
-  grid-template-columns: 2fr 4fr 4fr 2fr;
+  grid-template-areas:
+  "Header"
+  "Main"
+  "Footer";
+
+
   /*grid-gap: 10px;*/
 }
 

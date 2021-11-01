@@ -1,0 +1,12 @@
+.main {
+    grid-area: Main;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto,120px) minmax(auto,800px) 1fr;
+    grid-template-areas: "Navbar Content";
+    grid-column-gap: 20px;
+    margin: 10px 0;
+}
+.nav {
+
+
+}

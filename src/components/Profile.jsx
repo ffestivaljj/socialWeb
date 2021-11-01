@@ -14,14 +14,19 @@ const Profile = () => {
             <div className={s.item}>Web Cite: <a href='pikabu.ru'>pikabu.ru</a></div>
         </div>
 
+
         <div className={s.wall}>
-            My posts
+            <span>My posts</span>
+
             <div className={s.newpost}>
-                New post
+                <p><textarea className={s.comment} cols="40" rows="3"></textarea></p>
             </div>
-            <div className={s.item}>
-                <div className="item">post 1</div>
-                <div className="item">post 2</div>
+            <div>
+                <button className={s.button__send}>Send</button>
+            </div>
+            <div className={s.wall__posts}>
+                <div className={s.wall__post}>post 1</div>
+                <div className={s.wall__post}>post 2</div>
             </div>
         </div>
 

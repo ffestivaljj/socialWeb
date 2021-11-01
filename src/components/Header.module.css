@@ -1,19 +1,50 @@
-.header {
-    grid-area: h;
-    margin: 5px 20px;
+/*Обнуление*/
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+/*Обнуление*/
+
+.header{
+    grid-area: Header;
     background-color: blueviolet;
-    border:5px solid darkgray;
-    border-radius: 15px;
-    position: relative;
+    /*padding: 15px;*/
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 200px) minmax(auto, 700px) 1fr;
+}
+.header__logo{
+    background-image: url("https://www.nba.com/lakers/sites/lakers/files/lakers_logo_500.png?w=180&h=105");
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
 }
 
-.header img {
+.header__menu{
+    grid-column: 3/4;
 
-    margin: 0px 5px 0px;
-    width: 110px;
-    position: absolute;
-    top: -5px;
-    left: 5px;
-    /*max-height: 100px;*/
+}
+.header__list{
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+
+
+
+}
+.header__link{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: none;
+    align-items: center;
 
 }

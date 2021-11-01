@@ -1,21 +1,22 @@
 .nav {
-    margin:0px 20px 0px 20px;
+    grid-area: Navbar;
+    grid-column: 2/3;
+    /*margin:0px 20px 0px 20px;*/
 
-    width: 200px;
-    height: 340px;
-    grid-area: n;
-    background-color: #333333;
+    /*width: 200px;
+    height: 340px;*/
+
     border-radius: 15px;
 
 }
 
 .item {
-    padding: 10px 5px;
-    border: 5px solid darkgray;
+    padding: 5px 5px;
+    border: 3px solid darkgray;
     border-radius: 15px;
     background-color: #8a2be2;
     margin: 10px 0px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Righteous";
     text-transform: uppercase;
     color: #fcc97a;
@@ -23,5 +24,6 @@
 
 .item:hover {
     color: #ff9b3e;
-    border: 5px solid #ff9b3e;
+    border: 3px solid #ff9b3e;
+    text-align: end;
 }

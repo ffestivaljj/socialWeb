@@ -1,0 +1,7 @@
+
+
+.content{
+    grid-area: Content;
+    grid-column: 3/4;
+
+}
