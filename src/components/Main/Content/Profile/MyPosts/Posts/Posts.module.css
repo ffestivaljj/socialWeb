@@ -1,8 +1,5 @@
 
-.wall__posts{
-    margin: 10px 15px;
-}
-.wall__post{
+.post{
     margin: 0 0 10px;
     width: 400px;
     border: 3px solid darkgray;
@@ -10,4 +7,7 @@
     font-family: "Righteous";
     color: #fcc97a;
     padding: 5px 10px;
+}
+.post img{
+    width: 50px;
 }

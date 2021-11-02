@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './MyPosts.module.css';
-import Posts from "./Posts/Posts";
+import Post from "./Posts/Post";
 
 
 const MyPosts = () => {
@@ -14,7 +14,11 @@ const MyPosts = () => {
         <div>
             <button className={s.button__send}>Send</button>
         </div>
-        <Posts/>
+        <div className={s.posts}>
+            <Post massage='HIHIHIHIHIH' likes='5'/>
+            <Post massage='YOYOYOYOYO' likes='5'/>
+            <Post massage='HELLO' likes='5'/>
+        </div>
     </div>
 }
 

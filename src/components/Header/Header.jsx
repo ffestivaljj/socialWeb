@@ -7,7 +7,7 @@ const Header = () => {
         <a href="#" className={s.header__logo}></a>
         <nav className={s.header__menu}>
             <ul className={s.header__list}>
-                <li><a href="#"  className={s.header__link}>Music</a></li>
+                <li><a href="#" className={s.header__link}>Music</a></li>
                 <li><a href="#" className={s.header__link}>Notifications</a></li>
                 <li><a href="#" className={s.header__link}>Stream</a></li>
                 <li><a href="#" className={s.header__link}>Search</a></li>
