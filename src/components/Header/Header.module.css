@@ -15,9 +15,16 @@ ul {
 .header{
     grid-area: Header;
     background-color: blueviolet;
-    /*padding: 15px;*/
+   /* position: fixed;
+    z-index: 5;
+    width: 100%;*/
+
     display: grid;
     grid-template: 1fr / 1fr minmax(auto, 200px) minmax(auto, 700px) 1fr;
+    /*padding: 15px;*/
+
+
+
 }
 .header__logo{
     background-image: url("https://www.nba.com/lakers/sites/lakers/files/lakers_logo_500.png?w=180&h=105");

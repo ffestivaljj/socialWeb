@@ -1,5 +1,9 @@
 .footer {
     grid-area: Footer;
+    /*position: fixed;
+    z-index: 5;
+    width: 100%;*/
+
 }
 .copy{
     color: white;

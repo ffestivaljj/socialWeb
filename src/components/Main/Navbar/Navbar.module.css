@@ -7,6 +7,7 @@
     height: 340px;*/
 
     border-radius: 15px;
+    text-decoration: none;
 
 }
 
@@ -20,6 +21,11 @@
     font-family: "Righteous";
     text-transform: uppercase;
     color: #fcc97a;
+}
+
+.active {
+    border: 3px solid #ff9b3e;
+
 }
 
 .item:hover {
