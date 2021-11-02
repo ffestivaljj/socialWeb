@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Profile.module.css';
+import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
     return <div className={s.profile}>
@@ -15,20 +16,7 @@ const Profile = () => {
         </div>
 
 
-        <div className={s.wall}>
-            <span>My posts</span>
-
-            <div className={s.newpost}>
-                <p><textarea className={s.comment} cols="40" rows="3"></textarea></p>
-            </div>
-            <div>
-                <button className={s.button__send}>Send</button>
-            </div>
-            <div className={s.wall__posts}>
-                <div className={s.wall__post}>post 1</div>
-                <div className={s.wall__post}>post 2</div>
-            </div>
-        </div>
+        <MyPosts/>
 
     </div>
 }

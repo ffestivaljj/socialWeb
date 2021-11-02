@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Content.module.css';
-import Profile from "./Profile"
+import Profile from "./Profile/Profile"
 
 
 const Content = () => {
