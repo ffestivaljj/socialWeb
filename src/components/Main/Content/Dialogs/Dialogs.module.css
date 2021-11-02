@@ -2,4 +2,35 @@
     color: white;
     font-size: 25px;
     background-color: #ff9b3e;
+
+    display: grid;
+    grid-template: 1fr / minmax(300px,auto) 1fr ;
+
+
+}
+.dialog__items{
+    padding: 10px;
+    background-color: #91ff90;
+
+
+
+}
+.item{
+
+}
+.item a{
+    text-decoration: none;
+    color:red;
+
+}
+.dialog__items .active{
+    color: blue;
+}
+.messages{
+    padding: 10px;
+    background-color: brown;
+
+}
+.message{
+
 }
